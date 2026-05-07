@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omkar Shinde | Portfolio</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    nav a { text-decoration: none; color: #0066cc; }
+    section { padding: 40px 0; border-bottom: 1px solid #eee; }
+    .tag { font-size: 0.8em; background: #eee; padding: 2px 6px; border-radius: 3px; }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
+    input, textarea, button { padding: 8px; font-family: inherit; }
+    progress { width: 100%; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <strong>OS_</strong>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home">
+    <p><small>// First Year E&TC Engineer</small></p>
+    <h1>Omkar Shinde.</h1>
+    <p>Exploring circuits, signals & code — <strong>Electronics & Telecommunication Engineering</strong>, First Year.</p>
+    <a href="#projects">View Projects →</a>
+  </section>
+
+
+  <section id="about">
+    <h2>Who I Am</h2>
+    <p>Hey! I'm <strong>Omkar Shinde</strong>, a first-year student pursuing <strong>Electronics & Telecommunication Engineering</strong>. I'm passionate about understanding how technology works at its core — from signals to software.</p>
+    <p>I'm currently building my foundation in <strong>circuit theory, analog electronics, and programming</strong>. I love tinkering with hardware and writing code that bridges the physical and digital worlds.</p>
+    <p>When I'm not studying, I enjoy exploring embedded systems, listening to music, and solving logic puzzles.</p>
+
+
+    <h3>Skills & Learning</h3>
+    <label>Circuit Analysis (75%)</label> <progress value="75" max="100"></progress>
+    <label>C Programming (65%)</label> <progress value="65" max="100"></progress>
+    <label>Digital Electronics (70%)</label> <progress value="70" max="100"></progress>
+    <label>Arduino / Embedded (50%)</label> <progress value="50" max="100"></progress>
+    <label>HTML & CSS (60%)</label> <progress value="60" max="100"></progress>
+  </section>
+
+
+  <section id="projects">
+    <h2>What I've Built</h2>
+    
+    <div style="margin-bottom: 20px;">
+      <small>Project — 01</small>
+      <h3>LED Blinking Circuit</h3>
+      <p>Designed a 555-timer-based LED blinking circuit with adjustable frequency using variable resistors. Explored astable multivibrator operation.</p>
+      <span class="tag">555 Timer</span> <span class="tag">Analog</span> <span class="tag">Hardware</span>
+    </div>
+
+
+    <div style="margin-bottom: 20px;">
+      <small>Project — 02</small>
+      <h3>Arduino Temperature Monitor</h3>
+      <p>Built a basic temperature monitoring system using an Arduino Uno and DHT11 sensor that displays readings on a 16×2 LCD screen.</p>
+      <span class="tag">Arduino</span> <span class="tag">Sensors</span> <span class="tag">C++</span>
+    </div>
+
+
+    <div style="margin-bottom: 20px;">
+      <small>Project — 03</small>
+      <h3>Binary to Decimal Converter</h3>
+      <p>Implemented a logic-gate-level binary-to-decimal converter on a breadboard using ICs. Verified truth tables and gate combinations.</p>
+      <span class="tag">Digital Logic</span> <span class="tag">ICs</span> <span class="tag">Proteus</span>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>I'm open to collaborations, internships, and learning opportunities. Feel free to reach out!</p>
+    <ul>
+      <li>Email: omkar@example.com</li>
+      <li>LinkedIn: linkedin.com/in/omkarshinde</li>
+      <li>GitHub: github.com/omkarshinde</li>
+    </ul>
+
+
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Message Sent ✓';">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send Message →</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p><small>© 2026 Omkar Shinde — E&TC Engineering, First Year</small></p>
+  </footer>
+
+
+</body>
+</html>
